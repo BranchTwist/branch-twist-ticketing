@@ -2,7 +2,6 @@
 ![Codecov](https://codecov.io/gh/UniversitadellaCalabria/uniTicket/branch/master/graph/badge.svg)
 ![Python version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue.svg)
 
-
 uniTicket
 ---------
 
@@ -21,14 +20,14 @@ Principali caratteristiche:
 - Chat e videoconferenza per operatori e utenti;
 - Report di riepilogo via email che include la lista dei ticket pendenti agli operatori;
 - JQuery Datatables integrato, per una gestione Ajax con processamento lato server dei dati, per ottime performance;
-- Template grafico Bootstrap Italia (Linee Guida di Design pe la P.A.) reponsive per una esperienza di navigazione ottimale anche sui dispositivi mobili;
+- Template grafico Bootstrap Italia (Linee Guida di Design per la P.A.) reponsive per una esperienza di navigazione ottimale anche sui dispositivi mobili;
 - Integazione SAML2 SSO (pySAML2);
 
 [Documentazione ufficiale](https://uniticket.readthedocs.io/it/latest/index.html) su **readthedocs** per installazione e utilizzo del software.
 
-
 Dump example data
 -----------------
+
 ````
 ./manage.py dumpdata -e auth -e contenttypes -e sessions --indent 2 -e admin.logentry > ../dumps/example_conf.json
 ````
@@ -55,6 +54,7 @@ docker pull ghcr.io/UniversitaDellaCalabria/uniTicket:latest
 ### Docker compose
 
 Install Docker using the packages distributed from the official website and the following tools.
+
 ````
 sudo pip install docker-compose
 ````
@@ -66,14 +66,15 @@ Prepare the project folder with the desidered assets:
 - Customize in _uniticket/uni_ticket_project/settingslocal.py_ files and/or in the example dumps json file.
 
 Run the stack
+
 ````
 sudo docker-compose up
 ````
 
 Point your web browser to `http://localhost:8000/` and do your first oidc authentication.
 
-
 ## Tests
+
 ````
 ./manage.py test --settings tests.settings
 ````

@@ -55,7 +55,7 @@ description:
       - >-
         JQuery Datatables integrato, per una gestione Ajax con processamento
         lato server dei dati;
-      - Template grafico Bootstrap Italia (Linee Guida di Design pe la P.A.);
+      - Template grafico Bootstrap Italia (Linee Guida di Design per la P.A.);
       - Integazione SAML2 SSO (pySAML2);
     longDescription: >
       Django **Unified Ticket System** è un sistema software di ticketing ed
@@ -97,7 +97,7 @@ description:
       - JQuery Datatables integrato, per una gestione Ajax con processamento
         lato server dei dati, per ottime performance;
 
-      - Template grafico Bootstrap Italia (Linee Guida di Design pe la P.A.)
+      - Template grafico Bootstrap Italia (Linee Guida di Design per la P.A.)
         reponsive per una esperienza di navigazione ottimale anche sui dispositivi mobili;
 
       - Integazione SAML2 SSO (pySAML2);

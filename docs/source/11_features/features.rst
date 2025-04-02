@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Template Bootstrap Italia (Linee Guida di Design pe la P.A.)
+Template Bootstrap Italia (Linee Guida di Design per la P.A.)
 ============================================================
 
 | La libreria Bootstrap Italia è il modo più semplice e sicuro per costruire interfacce web moderne, inclusive e semplici da mantenere.

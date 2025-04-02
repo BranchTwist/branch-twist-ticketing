@@ -22,7 +22,7 @@ Principali caratteristiche:
 - Chat e videoconferenza per operatori e utenti;
 - Report di riepilogo via email che include la lista dei ticket pendenti agli operatori;
 - JQuery Datatables integrato, per una gestione Ajax con processamento lato server dei dati, per ottime performance;
-- Template grafico Bootstrap Italia (Linee Guida di Design pe la P.A.) reponsive per una esperienza di navigazione ottimale anche sui dispositivi mobili;
+- Template grafico Bootstrap Italia (Linee Guida di Design per la P.A.) reponsive per una esperienza di navigazione ottimale anche sui dispositivi mobili;
 - Integazione SAML2 SSO (pySAML2);
 
 **Github:** https://github.com/UniversitaDellaCalabria/uniTicket

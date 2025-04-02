@@ -9,7 +9,7 @@ from django.utils.translation import gettext_lazy as _
 AUTH_USER_MODEL = "accounts.User"
 
 # Administration backed available at /admin or whatever configured above
-ADMIN_PATH = 'admin_path'
+ADMIN_PATH = 'admin'
 
 # from django 3.2
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
@@ -44,11 +44,11 @@ if not DEBUG:
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
 
-HOSTNAME = 'uniticket.hostname.url'
+HOSTNAME = 'support.branchtwist.com'
 CSRF_TRUSTED_ORIGINS = [f'https://{HOSTNAME}']
 ALLOWED_HOSTS = ['*']
 
-EMAIL_SENDER = f'ticket.no-reply@{HOSTNAME}'
+EMAIL_SENDER = f'support@{HOSTNAME}'
 
 DATABASES = {
     'default': {
@@ -195,7 +195,7 @@ LOGOUT_REDIRECT_URL='/'
 CUSTOM_WIDGETS_IN_FORMSETS = False
 CUSTOM_WIDGETS = {
     'BaseDateField': 'bootstrap_italia_template.widgets.BootstrapItaliaDateWidget',
-    'BaseDateTimeSimpleField': 'uni_ticket_bootstrap_italia_template.widgets.UniTicketDateTimeWidget',
+    # 'BaseDateTimeField': 'bootstrap_italia_template.widgets.BootstrapItaliaTimeWidget',
     'CustomSelectBoxField': 'bootstrap_italia_template.widgets.BootstrapItaliaSelectWidget',
     'CustomRadioBoxField': 'bootstrap_italia_template.widgets.BootstrapItaliaRadioWidget',
     # 'BaseDateField': forms.widgets.DateInput(),
@@ -236,7 +236,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated'
     ],
     'DEFAULT_PAGINATION_CLASS':
-        'api_rest.pagination.StandardPagination'
+        'api_rest.pagination.StandardPagination',
     'PAGE_SIZE': 10
 }
 
@@ -254,8 +254,8 @@ if "channels" in INSTALLED_APPS:
         },
     }
 
-ADMINS = [('Giuseppe De Marco', 'giuseppe.demarco@server.it'),
-          ('Francesco Filicetti', 'francesco.filicetti@server.it'),]
+ADMINS = [('Alessio Goslino', 'alessio.goslino@branchtwist.com'),
+          ('Francesco Arcostanzo', 'francesco.arcostanzo@branchtwist.com'),]
 
 LOGGING = {
     'version': 1,
@@ -387,7 +387,7 @@ PROTOCOL_CLASS = f'{PROTOCOL_PACKAGE}.protocollo'
 PROTOCOL_UTILS = f'{PROTOCOL_PACKAGE}.utils'
 
 # DEFAULT EMAIL
-PROTOCOL_EMAIL_DEFAULT = 'default@example.pec.it'
+PROTOCOL_EMAIL_DEFAULT = 'branchtwist@pec.it'
 
 # TEST PARAMS
 PROTOCOL_TEST_AOO = 'test_aoo_value'
@@ -510,7 +510,7 @@ PROTOCOL_XML = """
 
 # statistics
 STATS_SHOW_TICKETS_BY_USER = False
-STATS_MAX_DAYS = 30
+STATS_MAX_DAYS = 120
 
 # default template to extends
 # Default Bootstrap Italia template: 'bootstrap-italia-base.html'
